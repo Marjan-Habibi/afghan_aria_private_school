@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afghan Aria School</title>
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #48A6A7;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    /* TAB BUTTONS */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #e6f7f7;
+      padding: 10px 0;
+    }
+
+    .tab-link {
+      background-color: #e0e0e0;
+      color: #0d9ba5;
+      border: none;
+      padding: 12px 20px;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .tab-link:hover {
+      background-color: #ccc;
+    }
+
+    .tab-link.active {
+      background-color: #48A6A7;
+      color: white;
+    }
+
+    /* SLIDER */
+    .slider {
+      position: relative;
+      max-width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      animation: slide 18s infinite;
+      transition: transform 2s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      33%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* TAB CONTENT */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+    /* section footer */
+.site-footer {
+  background-color:  #e6f7f7;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-contact h4 {
+  color: #0d9ba5;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-links ul {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #0d9ba5;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #000;
+}
+
+.footer-contact a {
+  color: #0d9ba5;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #000;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #0d9ba5;
+  font-size: 20px;
+  margin-right: 15px;
+  display: inline-block;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #555;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Afghan Aria Private School</h1>
+    <p>Monthly Exam Results | نتایج امتحان ماهوار صنف‌های 1 تا 6</p>
+  </header>
+
+  <!-- Buttons for Grades -->
+  <div class="tab-nav">
+    <a href="kg 1 and kg2.html" class="tab-link">KG1 & KG2</a>
+    <a href="grade 1.html" class="tab-link">Grade 1</a>
+    <a href="grade 2.html" class="tab-link">Grade 2</a>
+    <a href="grade 3.html" class="tab-link">Grade 3</a>
+    <a href="grade 4.html" class="tab-link">Grade 4</a>
+    <a href="grade 5.html" class="tab-link">Grade 5</a>
+    <a href="grade 6.html" class="tab-link">Grade 6</a>
+  </div>
+
+  <!-- Image Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="image/classes 10.jpg" alt="1" />
+      <img src="image/student 2.jpg"/>
+      <img src="image/student 3.jpg">
+      <img src="image/classes 1.jpg" alt="Slide 2" />
+      <img src="image/classes 4.jpg" alt="Slide 3" />
+      <img src="image/student 12.jpg" alt="slide 4"/>
+      <img src="image/student 11.jpg"/>
+      <img src="image/student 5.jpg" alt="sliode 5"/>
+      <img src="image/classes 3.jpg" alt="sliode 6"/>
+      <img src="image/classes 8.jpg"/>
+      <img src="image/classes 9.jpg"/>
+      <img src="image/classes 2.jpg"/>
+      <img src="image\grade 3.jpg"/>
+      <img src="image\grade 4.jpg"/>
+      <img src="image\grade 5.jpg"/>
+      <img src="image\grade 1.jpg"/>
+      <img src="image\grade 6.jpg"/>
+      
+    </div>
+  </div>
+<!-- Footer Start -->
+<footer class="site-footer">
+    <div class="footer-container">
+    
+    <!-- About Section -->
+    <div class="footer-about">
+      <h3>Afghan Aria School</h3>
+      <p>Empowering minds, shaping futures. We offer quality education with a modern curriculum in a safe and inclusive environment.</p>
+    </div>
+    
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="grade 1.html">Grade 1</a></li>
+        <li><a href="academic services.html">Grade 2</a></li>
+        <li><a href="aria stars.html">Grade 3</a></li>
+        <li><a href="curriculum.html">Grade 4</a></li>
+        <li><a href="class.html">Grade 5</a></li>
+        <li><a href="registration.html">Grade 6</a></li>
+    </ul>
+    </div>
+    
+    <!-- Contact & Social -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-map-marker-alt"></i>Afghanistan Mazar-e-Sharif Karte Khorasan 2nd Alley, West Alley.</p>
+      <p><i class="fas fa-envelope"></i> 
+      <a href="afghanariaprivateschools4@gmail.com">afghanariaprivateschools4@gmail.com</a>
+      </p>
+      <p><i class="fas fa-phone"><a href="tel:+93780000000"></i> +93700930504</p></i>
+    
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1EdPDJLKu1/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/afghan_aria_private_school?igsh=aXQ0aXpheGd4NjRy" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaTF3yQKLaHq3WipGN3r" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/Anilariamal" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://www.youtube.com/@Afghanariaschoolvideos" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.google.com/maps?q=36.715771,67.105865" target="_blank" title="Location"><i class="fas fa-map-marker-alt"></i></a>
+      </div>
+    </div>
+    
+    </div>
+    
+    <!-- Copyright -->
+    <div class="footer-bottom">
+    <p>&copy; 2025 Afghan Aria School | Made By Marjan Habibi, All rights reserved.</p>
+    </div>
+    </footer>
+    <!-- Footer End -->
+
+  <!-- JavaScript for Tabs -->
+  <script>
+    function openTab(evt, tabName) {
+      let contents = document.
+      querySelectorAll('.tab-content');
+      let links = document.querySelectorAll('.tab-link');
+      contents.forEach(c => c.classList.remove('active'));
+      links.forEach(l => l.classList.remove('active'));
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
